@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animello.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/jpg" href="pic/icon.jpg" >
+    <title>AniMello</title>
+</head>
+<body>
+    <div class="B1">
+        <a href="home.html"><img  class="B11"  src="pic/s1.jpeg" alt="AniMello"></a>
+        <a href="animello.html"><button class="nav">HOME</button></a>
+        <a href="not.html"><button class="nav">LIST</button></a>
+        <a href="not.html"><button class="nav">UPCOMING</button></a>
+        <a href="not.html"><button class="nav">GENRES</button></a>
+        <a href="not.html"><button class="nav">ADDED</button></a>
+        <a href="sign.html"><button class="nav" id="log">Sign In</button></a>
+    </div>
+
+    <!-- slide show -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <a href="ani1.html"><img src="pic/dadanb.png" style="width:100%"></a>
+
+        </div>
+        
+        <div class="mySlides fade">
+            <a href="ani2.html"><img src="pic/solo.png" style="width:100%"></a>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="ani4.html"><img src="pic/demo.png" style="width:100%"></a>
+        </div>
+        
+        <div class="mySlides fade">
+            <a href="ani6.html"><img src="pic/juju.png" style="width:100%"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <a href="ani3.html"><img src="pic/spy.png" style="width:100%"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <a href="ani5.html"><img src="pic/chain.jpg" style="width:100%"></a>
+          </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    
+    <!-- search bar -->
+    <div class="search" > 
+        <img  class="search" id="s1" src="pic/ser.jpg">
+        <input id="s2" type="text" id="search" name="search" placeholder="Search Anime...">
+        <a href="not.html"><input id="s2" class="submit" type="submit" value="Filter"></a>
+    </div>
+    <h3 style="margin-left:50px; color: rgb(221, 221, 221); font-weight: 550;">
+        RECENTLY <br>UPDATE <span style="margin-left: 70px;">All</span> 
+        <span>Sub</span> <span>Dub</span> 
+        <span>Chinese</span><span> Trending</span>
+    </h3>
+    <div class="box">
+        <table class="tbox">
+            <tr>
+                <td >
+                    <a href="ani1.html"><img class="pic" src="pic/dadan.jpg" >
+                    <img class="start" src="pic/play.png">
+                </a></td>
+                <td>e</td>
+                <td ><a href="ani2.html"><img class="pic" src="pic/psolo.png" >
+                <img class="start" src="pic/play.png"></a></td>
+                <td>e</td>
+                <td ><a href="ani3.html"><img class="pic" src="pic/pspy.png" >
+                    <img class="start" src="pic/play.png"></a></td>
+                <td>e</td>
+                <td ><a href="ani4.html"><img class="pic" src="pic/pdemo.jpg" >
+                    <img class="start" src="pic/play.png"></a></td>
+                <td>e</td>
+                <td ><a href="ani5.html"><img class="pic" src="pic/pone.jpg" >
+                    <img class="start" src="pic/play.png"></a></td>
+                <td>e</td>
+                <td><a href="ani6.html"><img class="pic" src="pic/pjujut.png" >
+                    <img class="start" src="pic/play.png"></a></td>
+            </tr>
+            <tr>
+                <td id="name">DAN DA DAN</td>
+                <td id="name"></td>
+                <td id="name">Solo Leveling</td>
+                <td id="name"></td>
+                <td id="name">Spy X Family</td>
+                <td id="name"></td>
+                <td id="name">Demon Slayer:Kimetsu</td>
+                <td id="name"></td>
+                <td id="name">Chainsaw Man</td>
+                <td id="name"></td>
+                <td id="name">Jujutsu Kaisen Season2</td>
+
+            </tr>
+            <tr>
+                <td id="name"></td>
+                <td id="name"></td>
+                <td id="name"></td>
+                <td id="name"></td>
+                <td id="name"></td>
+                <td id="name"></td>
+                <td id="name">no Yaiba Hashira Training</td>
+                <td id="name"></td>
+                <td id="name"></td>
+                <td id="name"></td>
+                <td id="name">Part ll (13-23)</td>
+    
+            </tr>    
+        </table>
+    </div>
+    <hr style="border: 0.5px solid rgb(43, 41, 41); margin: 40px; margin-bottom: 0px;">
+<div style="margin-left: 410px">
+    <p class="let">Home</p>
+    <p class="let">DMCA</p>
+    <p class="let">Terms of Use</p>
+    <p class="let">Read manga online</p>
+    <p class="let" style="margin-right: 400px;">Alt</p> <br> 
+</div>
+<div class="B1">
+    <a href="home.html"><img  class="B13" style="margin-left: 40px;"  src="pic/s1.jpeg" alt="AniMello"></a>
+    <p class="B22"">Copyright &copy; animello All Rights Reserved.</p>
+    <p class="B23">Made with ❤️ for anime users<br>Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+    
+</div>
+
+
+        <script>
+            
+            var myIndex = 0;
+                carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+             myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000);
+            }
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+            
+            </script>
+        
+</body>
+</html>
